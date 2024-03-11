@@ -515,7 +515,7 @@ function _lunch_meat()
         pushd $T > /dev/null
         vendor/omni/build/tools/roomservice.py $product
         popd > /dev/null
-        check_product $product
+        check_product $product $release
     else
         T=$(gettop)
         pushd $T > /dev/null
